@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rashid Nazari Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <button class="sidebar-toggle">
+  <i class="fas fa-bars"></i>
+</button>
+  <nav>
+    <div class="logo">A.Rashid</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact"><span class="icon"></span> Get in Touch</a></li>
+    </ul>
+  </nav>
+  <main>
+    <aside class="sidebar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Get in Touch</a></li>
+  </ul>
+</aside>
+
+    <section class="hero">
+      <p class="intro">Hi, my name is</p>
+      <h1>A.Rashid.</h1>
+      <h2>I build things with ai.</h2>
+      <p class="desc">
+        I'm a computer student specializing in building (and occasionally designing) website with ai.
+        Currently, I'm focused on ML and buildin things with ai. 
+
+      </p>
+      <a href="#" class="cta-btn">Check out my work!</a>
+    </section>
+    <section id="about" class="section about-custom">
+      <h2 class="section-title-about">About Me</h2>
+      <p class="section-content-about">
+        I'm Rashid, a computer science student in FUM . I enjoy creating things that live on the internet. My interest in web development started back in 2022 and in 2023 i start to mix ai into it. and my job got lot easier
+      </p>
+    </section>
+    <section id="experience" class="section experience-custom">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li class="lione"><strong>CS Student</strong> at Fum (2021 - Present)</li>
+        <li class="litwo"><strong>Web Developer</strong> at Example Co. (2021 - 2023)</li>
+      </ul>
+    </section>
+    <section id="projects" class="section project-custom">
+   <div class="projects-header-row">
+    <div></div>
+    <h2>Projects</h2>
+    <div></div>
+   </div>
+   <div class="projects">
+    <div class="project-card">
+      <h3>Awesome Project</h3>
+      <img src="project1.jpg" alt="Project 1" class="project-image">
+      <p>A description of this project goes here.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Another Project</h3>
+      <img src="project2.jpg" alt="Project 2" class="project-image">
+      <p>Another description goes here.</p>
+      <a href="#">View Project</a>
+    </div>
+  </div>
+</section>
+    <section id="contact" class="section contact-custom">
+      <lottie-player
+  src="https://assets1.lottiefiles.com/packages/lf20_RpVi8hPncK.json"
+  background="transparent"
+  speed="1"
+  style="width: 120px; height: 120px; position: fixed; right: 32px; bottom: 32px; z-index: 10000;"
+  loop
+  autoplay
+></lottie-player>
+  <h2>Get in Touch</h2>
+  <p>Connect with me on:</p>
+  <div class="social-icons">
+    <a href="https://github.com/USERNAME" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://instagram.com/USERNAME" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 A.Rashid Clone (clone)</p>
+  </footer>
+</body>
+<script>
+  const toggleBtn = document.querySelector('.sidebar-toggle');
+  const sidebar = document.querySelector('.sidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+</script>
+</html>
